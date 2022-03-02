@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(172, 223, 243); */
+  background-color: rgb(32, 119, 219);
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+.main{
+  background-color: #fff;
+  border-radius: 20px;
+  width: 300px;
+  height: 60vh;
+ margin-top: 50px;
+ overflow: hidden;
+ 
+}
+
+.inpt{
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+.inpt input{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 80%;
+  padding: 20px;
+  color: rgb(128, 128, 128);
+
+}
+.inpt input:focus{
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.inpt button{
+  border: none;
+  background-color: transparent;
+  width: 20%;
+  cursor: pointer;
+  padding: 8px;
+  transition: all;
+}
+.btn_icon{
+  font-size: 20px;
+  color: rgb(32, 119, 219);
+  margin-top: 5px;
+  
+
+}
+
+
+.list{
+  padding: 20px;
+  height: auto;
+  width: 100%;
+
+}
+
+.list ul{
+  list-style: none;
+  /* background-color: violet; */
+  overflow: hidden;
+  width: 100%;
+  /* transition: s ease; */
+}
+.list ul li{
+padding: 5px;
+
+}
+
+.list ul li .delete{
+  color: rgb(32, 119, 219);
+  margin-right: 5px;
+  cursor: pointer;
+  animation: rotate 3s infinite;
+} 
+.list ul li .delete:hover{
+  color: rgb(248, 68, 68);
+}
+
+
+@keyframes rotate{
+  to{
+    transform: rotate(0deg);
+  }
+  from{
+    transform: rotate(360deg);
+  }
+
+}
